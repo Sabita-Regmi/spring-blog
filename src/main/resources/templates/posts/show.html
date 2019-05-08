@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="fragments/head :: header('Play Dice Game')"/>
+</head>
+
+<body>
+<th:block th:replace="fragments/navbar" />
+
+<h2 th:text="${post.title}"></h2>
+<p th:text="${post.body}"></p>
+<p th:text="${post.id}"></p>
+
+
+<!--<p th:text="${post.user.email}"></p>-->
+<span th:text="${post.user.email}"></span>
+<br/>
+<span th:text="${post.user.username}"></span>
+
+
+
+</body>
+</html>

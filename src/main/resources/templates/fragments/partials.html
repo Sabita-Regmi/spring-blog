@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<header th:fragment="header">THIS IS A HEADER</header>
+<nav th:fragment="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Bloggin'</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="">All Ads</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="">SignUp</a></li>
+        </ul>
+    </div>
+</nav>
+<footer th:fragment="footer">FEET FEET FEET FEET FEET</footer>
+</body>
+</html>
