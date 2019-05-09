@@ -13,7 +13,12 @@
     <li th:each="item : ${posts}">
         <a th:href="@{'/posts/'+${item.getId()}}"> <h3 th:text="${item.title}"></h3></a>
         <p th:text="${item.body}"></p>
+        <button><a th:href="'posts/'+ ${item.id}+'/edit'">edit</a></button>
+        <button><a th:href="'posts/'+${item.id}+'/delete'">delete</a></button>
     </li>
+
+
 </ul>
+<button><a href="/posts/create">create post</a></button>
 </body>
 </html>
