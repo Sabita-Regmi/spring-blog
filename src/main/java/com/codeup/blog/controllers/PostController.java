@@ -62,7 +62,7 @@ public String createPost(@ModelAttribute Post post){
         post.setAuthor(userDB);
         postRepo.save(post);
     emailService.prepareAndSend(post, "Post has been created", "The post has been created successfully and you can find it with the ID of " +post.getId());
-        return "redirect:/posts/";
+        return "redirect:/posts";
 
 
 }
